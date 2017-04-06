@@ -1,0 +1,178 @@
+body{
+  margin: 40px 0 0 0;
+  padding: 0;
+  font-size: 12PX;
+  font-family: "微软雅黑";
+  background: #fff;
+}
+/* 更改jQuery ui对话框header的背景 */
+.ui-widget-header{
+  background: url(../images/ui_header_bg.png);
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  background: url(../images/ui_header_bg.png);
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+  background: url(../images/ui_white.png);
+    color: #666;
+}
+#header{
+  width: 100%;
+  height: 40px;
+  background: url(../images/header_bg.png);
+  position: absolute;
+  top: 0;
+}
+#header .header_main{
+  width: 800px;
+  height: 40px;
+  margin: 0 auto;
+}
+#header .header_main h1{
+  margin: 0;
+  padding: 0 10px;
+  color: #666;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+#header .header_search{
+  padding: 6px 0 0;
+  float: left;
+}
+#header .header_search .search{
+  width: 300px;
+  height: 24px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color:#666;
+  font-size: 14px;
+  text-indent: 5px;
+}
+#header .header_button{
+  padding: 5px;
+  float: left;
+}
+#header .header_member{
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  color: #555;
+  font-size: 14px;
+}
+#header .header_member a{
+  text-decoration: none;
+  color: #555;
+}
+
+#reg, #login, #question{
+    padding: 15px 0 0 15px;
+}
+#reg p,#login p, #question p{
+    margin: 10px 0;
+    padding: 0;
+}
+#reg p label, #login p label, #question p label{
+    font-size: 14px;
+    color: #666;
+}
+#reg .star, #login .star, #question .star{
+    color: maroon;
+    font-size: 14px;
+}
+#reg .succ, #login .succ, #question .succ{
+    display: inline-block;
+    width: 18px;
+    background: url("../images/reg_succ.png") no-repeat;
+}
+#reg ol, #login ol, #question ol{
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: maroon;
+}
+#reg ol li, #login ol li, #question ol li{
+    height: 20px;
+}
+#reg .text, #login .text, #question .text{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    width: 200px;
+    height: 25px;
+    line-height:25px;
+    color: #666;
+    text-indent: 5px;
+}
+.ui-tooltip{
+    color: #666;
+}
+.ui-menu-item a{
+    color:#666;
+}
+.ui-menu-item a.ui-state-focus{
+    background: url(../images/ui_header_bg.png);
+}
+/* 日历 */
+.ui-widget-header{
+    background: url(../images/ui_header_bg.png);
+}
+.ui-datepicker-today .ui-state-highlight{
+    border: 1px solid #f60;
+    color: #f60;
+    font-weight: 700;
+}
+.ui-datepicker-current-day .ui-state-active{
+    border: 1px solid #06f;
+    color: #06f;
+}
+/* loading */
+#loading{
+    background: url(../images/loading.gif) no-repeat 20px center;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: 40px;
+    color: #666;
+}
+#error{
+    background: url(../images/error.png) no-repeat 20px center;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: 40px;
+    color: #666;
+}
+#main{
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+#main .main_left{
+    width: 580px;
+    float: left;
+}
+#main .main_right{
+    width: 200px;
+    float: right;
+}
+#tabs{
+
+    border: none;
+}
+#ui-tabs-1,#ui-tabs-2,#ui-tabs-3{
+    border: 1px solid #aaa;
+    border-top: none;
+    position: relative;
+    top: -2px;
+}
+#accordion{
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>知问前端</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<body>
+<form id="reg" action="123.html">
+    <p>账号：<input type="text" class="required" minlength="2" name="user"></p>
+    <p><input type="submit" value="提交"> </p>
+</form>
+
+
+
+<script>
+$(function () {
+    $('#reg').validate({
+        submitHandler: function (form) {
+            // 当验证成功后执行，而且阻止了默认提交
+            // 一般用于ajax提交使用
+            alert('验证成功，准备提交')
+        },
+        rule:{
+            user: {
+                required: true,
+                minlength: 2,
+                rangelength: [5,10]
+            }
+        },
+        messages: {
+            user: {
+                required: '账号不能为空',
+                //minlength: jQuery.format('账号不能小于{0}位'),
+                //rangelenth: jQuery.format('账号必须在{0}-{1}之间')
+            }
+        }
+
+    });
+})
+</script>
+</body>
+</html>

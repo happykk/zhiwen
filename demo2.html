@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form.js插件的使用</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.form.js"></script>
+</head>
+<body>
+<form id="reg" method="post" action="add.php">
+    <p>账号：<input type="text" name="user" id="user"></p>
+    <p>密码：<input type="password" name="pass" id="pass"></p>
+    <p><input type="submit" value="提交"></p>
+</form>
+
+<script>
+$(function(){
+    $('#reg').ajaxForm(function(){
+        alert('提交成功！');
+    })
+
+
+
+});
+
+</script>
+</body>
+</html>
